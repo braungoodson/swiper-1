@@ -1,0 +1,24 @@
+div.input-group > span.input-group-addon {
+	min-width:60px;
+}
+
+div.input-group, div.btn-group {
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+.glyphicon-small {
+	font-size:10px;
+}
+
+.badge.label-success {
+	background-color:#D0EDD0;
+}
+
+.badge.label-danger {
+	background-color:#FACCCA;
+}
+
+.badge.label-warning {
+	background-color:#FAE7CD;
+}

@@ -1,12 +1,44 @@
 <!doctype html>
-<html>
+<html ng-app="app">
 	<head>
 		<link rel="stylesheet" type="text/css" href="bower_components/twitter/dist/css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="bower_components/twitter/dist/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="index.css" />
 	</head>
 <body>
+	<div class="container-fluid" ng-controller="appController">
+		<h3>gotoandatremember.com</h3>
+		<div class="input-group">
+		  <span class="input-group-addon">go to</span>
+		  <input type="text" class="form-control" placeholder="starbucks" ng-model="app._goto">
+		</div>
+		<div class="input-group">
+		  <span class="input-group-addon">and</span>
+		  <input type="text" class="form-control" placeholder="get an upside down caramel machiatto" ng-model="app._and">
+		</div>
+		<div class="input-group">
+		  <span class="input-group-addon">@</span>
+		  <input type="text" class="form-control" placeholder="10:00 AM" ng-model="app._at">
+		</div>
+		<div class="btn-group btn-group-justified">
+		  <div class="btn-group">
+		    <button type="button" class="btn btn-default" ng-click="app.click();">remember</button>
+		  </div>
+		</div>
+		<ul class="list-group">
+		  <li class="list-group-item" ng-repeat="li in app.listItems track by $index">
+		  	<span class="badge label-success" ng-click="app.success($index);"><span class="glyphicon glyphicon-ok glyphicon-small"></span></span>
+		  	<span class="badge label-danger" ng-click="app.danger($index);"><span class="glyphicon glyphicon-remove glyphicon-small"></span></span>
+		    <span class="badge label-warning">@ {{li._at}}</span>
+		    <h4 class="list-group-item-heading">{{li._goto}}</h4>
+		    <p class="list-group-item-text">{{li._and}}</p>
+		  </li>
+		</ul>
+	</div>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/twitter/dist/js/bootstrap.min.js"></script>
 	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
+	<script src="index.js"></script>
 </body>
 </html>
