@@ -1,5 +1,4 @@
 var express = require('express'),
-	cookieParser = require('cookie-parser'),
   server = express(),
   port = process.env.PORT || 30000,
   staticRoot = __dirname;
