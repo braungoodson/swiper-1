@@ -6,12 +6,62 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="bower_components/twitter/dist/css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="bower_components/twitter/dist/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="bower_components/swiper/dist/idangerous.swiper.css" />
 		<link rel="stylesheet" type="text/css" href="index.css" />
 	</head>
 <body>
+
+
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide blue-slide">
+				<div class="title">Horizontal Mode</div>
+				<p>Swipe to the Top or to the Bottom</p>
+			</div>
+			<div class="swiper-slide red-slide">
+				<div class="title">Slide 2</div>
+				<p>Keep swiping</p>
+			</div>
+			<div class="swiper-slide orange-slide">
+				<div class="title">Slide 3</div>
+				<p>The last one</p>
+			</div>
+		</div>
+		<div class="swiper-pagination">
+			<span class="swiper-pagination-switch"></span>
+			<span class="swiper-pagination-switch"></span>
+			<span class="swiper-pagination-switch"></span>
+		</div>
+	</div>
+
+	<div hydra-swiper>
+		<div hydra-swiper-slide>
+			<h1>Title</h1>
+			<p>Example hydra swiper using swiper from idangerous for browser and mobile compatability.</p>
+		</div>
+		<div>
+			<h1>Title</h1>
+			<p>Example hydra swiper using swiper from idangerous for browser and mobile compatability.</p>
+		</div>
+		<div>
+			<h1>Title</h1>
+			<p>Example hydra swiper using swiper from idangerous for browser and mobile compatability.</p>
+		</div>
+		<div>
+			<h1>Title</h1>
+			<p>Example hydra swiper using swiper from idangerous for browser and mobile compatability.</p>
+		</div>
+		<div>
+			<h1>Title</h1>
+			<p>Example hydra swiper using swiper from idangerous for browser and mobile compatability.</p>
+		</div>
+	</div>
+
+
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/twitter/dist/js/bootstrap.min.js"></script>
 	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/swiper/dist/idangerous.swiper.js"></script>
 	<script src="index.js"></script>
 </body>
 </html>
